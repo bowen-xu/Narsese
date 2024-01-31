@@ -510,9 +510,3 @@ def parse(text: str): return parser.parse(text)
 # if __name__ == '__main__':
 #     with open(sys.argv[1]) as f:
 #         print(parser.parse(f.read()))
-if __name__ == '__main__':
-    print("--- Narsese parser ---")
-    while True:
-        text = input("Input: ")
-        task = parse(text)
-        print(task)
