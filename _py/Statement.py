@@ -1,11 +1,8 @@
 from copy import copy
-import enum
-from pynars.Config import Enable
-from pynars.utils.IndexVar import IndexVar
+from ..utils.IndexVar import IndexVar
 from .Term import Term, TermType
 from .Copula import Copula
 from typing import List, Type
-# from .Compound import *f
 from ordered_set import OrderedSet
 
 class Statement(Term):

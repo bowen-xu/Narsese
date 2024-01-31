@@ -1,5 +1,6 @@
 from .Term import Term
 
+
 class Operator(Term):
     
     is_operation = True # ? If it changed the type of statements also need to change, but if rename it, two properties with different names will occur. Same as 'is_mental_operation'

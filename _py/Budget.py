@@ -1,6 +1,5 @@
 from math import sqrt
-from pynars.Config import Config
-from typing import Type
+from ..Config import Config
 from .Truth import Truth
 
 class Budget:

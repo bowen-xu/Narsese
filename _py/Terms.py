@@ -1,10 +1,8 @@
 from copy import copy, deepcopy
-from typing import Iterable, List, Set, Type
-from pynars.utils.IndexVar import IndexVar
+from typing import Iterable, Type
+from ..utils.IndexVar import IndexVar
 from ordered_set import OrderedSet
-from pynars.utils.tools import find_pos_with_pos, find_var_with_pos
 from .Term import Term
-from pynars import Global
 from typing import Tuple
 
 class Terms:

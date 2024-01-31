@@ -1,16 +1,14 @@
 from copy import copy
 from .Truth import Truth
 from .Term import Term
-from .Statement import Statement
 from enum import Enum
 from .Tense import Tense
 from typing import Type, Set
 
-from ordered_set import OrderedSet
 from .Evidence import *
 
-from pynars.Config import Config, Enable
-from pynars import Global
+from ..Config import Config
+from .. import Global
 
 
 class Punctuation(Enum):

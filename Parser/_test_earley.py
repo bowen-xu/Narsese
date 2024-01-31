@@ -1,5 +1,5 @@
 from lark import Lark
-from pynars.Narsese.Parser.parser import TreeToNarsese
+from .parser import TreeToNarsese
 from pathlib import Path
 
 filepath = Path(r'Narsese\Parser\narsese.lark')

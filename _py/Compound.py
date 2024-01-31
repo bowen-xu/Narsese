@@ -1,17 +1,13 @@
-# from pynars.NAL.Functions.ExtendedBooleanFunctions import Or
 from copy import copy
-from pynars.Config import Enable
-from pynars.Narsese._py.Interval import Interval
-from pynars.utils.IndexVar import IndexVar
+from .Interval import Interval
 from .Term import Term, TermType, place_holder
 from .Terms import Terms
 from .Connector import Connector
 from typing import Iterable, List, Type, Union
 from ordered_set import OrderedSet
 from typing import Set
-from pynars.utils.tools import list_contains
+from ..utils.tools import list_contains
 import numpy as np
-from pynars.Global import States
 
 
 class Compound(Term):  # , OrderedSet):

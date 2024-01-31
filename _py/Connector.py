@@ -1,6 +1,4 @@
-# from enum import Enum
-from pynars.utils.IdEnum import IdEnum
-# from .Term import Term
+from ..utils.IdEnum import IdEnum
 
 class Connector(IdEnum):
     Conjunction = "&&"

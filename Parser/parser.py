@@ -1,8 +1,11 @@
-from pynars.Narsese import Term, Judgement, Tense, Statement, Copula, Truth, Stamp, Interval
-from pynars.Narsese import Base, Operator, Budget, Task, Goal, Punctuation, Question, Quest, Sentence, VarPrefix, Variable, Connector, Compound, SELF
+from .. import Term, Judgement, Tense, Statement, Copula, Truth, Stamp, Interval
+from .. import Base, Operator, Budget, Task, Goal, Punctuation, Question, Quest, Sentence, VarPrefix, Variable, Connector, Compound, SELF
 from pathlib import Path
 from datetime import datetime
-from pynars import Config, Global
+# from pynars import Config, Global
+# import Config, Global
+from .. import Global, Config
+
 from collections import defaultdict
 
 root_path = Path(__file__).parent
@@ -507,3 +510,9 @@ def parse(text: str): return parser.parse(text)
 # if __name__ == '__main__':
 #     with open(sys.argv[1]) as f:
 #         print(parser.parse(f.read()))
+if __name__ == '__main__':
+    print("--- Narsese parser ---")
+    while True:
+        text = input("Input: ")
+        task = parse(text)
+        print(task)

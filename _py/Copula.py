@@ -1,5 +1,4 @@
-# from enum import Enum
-from pynars.utils.IdEnum import IdEnum
+from ..utils.IdEnum import IdEnum
 
 class Copula(IdEnum):
     Inheritance = "-->"

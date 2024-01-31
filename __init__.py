@@ -2,8 +2,10 @@
 
 '''
 if True:
-    # import from _py
     from ._py import *
+    to_exclude = ['Config', 'Global']
+    for name in to_exclude:
+        del globals()[name]
 else:
     # import from _pyx
     pass
